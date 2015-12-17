@@ -4331,7 +4331,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
   vertical-align: middle;
   width: 100%;
-  background-image: url(/imgs/ellipse.png);
+  background-image: url(../imgs/ellipse.png);
   background-repeat: no-repeat;
   height: 65vh;
   background-size: contain;
@@ -4343,6 +4343,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   transform: translateY(25%);
 }
 
+
 #quoteone {
   position: absolute;
   z-index: 15;
@@ -4350,13 +4351,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: 400;
   font-size: 26.0vmin;
   color: #d2d9ef;
-  left: 80%;
-  -webkit-transform: translate(-50%, 9%);
-  -moz-transform: translate-50%, 9%);
-  -ms-transform: translate(-50%, 9%);
-  -o-transform: translate(-50%, 9%);
-  transform: translate(-80%, 100%); 
+  display: block;
+  left: 25vw;
 }
+
 
 #quotetwo {
   position: absolute;
@@ -4365,12 +4363,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: 400;
   font-size: 26.0vmin;
   color: #d2d9ef;
-  left: 23%;
-  -webkit-transform: translate(-50%, 9%);
-  -moz-transform: translate-50%, 9%);
-  -ms-transform: translate(-50%, 9%);
-  -o-transform: translate(-50%, 9%);
-  transform: translate(-50%, 9%);     
+  right: 25vw;
+  top: 40vh;
 }
 
 #twain {
@@ -4381,11 +4375,63 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: 400;
   font-size: 1.8vmin;
   color: #d2d9ef;
-  left: 68%;
-  transform: translate(0%, 2350%)
-  
-  
-  
+  right: 26vw;
+  bottom: 3vh;
+}
+
+@media (max-width: 768px) {
+    #quotation {
+        font-size: 7.5vh;
+    }
+    #quoteone {
+        left: 3vw;
+        top: 5vh;
+    }
+    #quotetwo {
+        right: 2vw;
+    }
+    #twain {
+        right: 3vw;
+        bottom: 4vh;
+        font-size: 2vh;
+    }
+} 
+
+@media (max-width: 375px) {
+    #quotation {
+        font-size: 6vh;
+        transform: translateY(-6%);
+    }
+    #quoteone {
+        left: 5vw;
+        top: 9vh;
+    }
+    #quotetwo {
+        right: 3vw;
+    }
+    #quotepants {
+        transform: translateY(48%)
+    }
+    #twain {
+        right: 6vw;
+        bottom: 6vh;
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    #quoteone {
+        left: 19vw;
+        top: 2vh;
+    }
+    #quotetwo {
+        right: 19vw;
+    }
+    #twain {
+        right: 20vw;
+        bottom: 3vh;
+        font-size: 2vh;
+    }
 }
 
 
