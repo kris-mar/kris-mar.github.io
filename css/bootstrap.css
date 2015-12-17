@@ -4315,32 +4315,32 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }*/
 
 #ellipse {
-    overflow: auto;
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
-    width: 75vmin;
-    max-width:100%;
-    transform: scale(0.9, 0.9);
-    -ms-transform: scale(0.9, 0.9);
-    -webkit-transform: scale(0.9,       0.9);
+    background-image: url(/imgs/ellipse.png);
+    background-repeat: no-repeat;
+    height: 65vh;
+    background-size: contain;
+    background-position: center;
 }
 
 #quotation {
-  position:absolute;
+  position:relative;
   z-index: 5;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   font-size: 7.5vmin;
   color: #ffffff;
-  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  background-image: url(/imgs/ellipse.png);
+  background-repeat: no-repeat;
+  height: 65vh;
+  background-size: contain;
+  background-position: center;
 
-  top: 50%;
-  left: 27.2%;
-  	-webkit-transform: translate(-50%, -100%);
-	-moz-transform: translate(-50%, -100%);
-	-ms-transform: translate(-50%, -100%);
-	-o-transform: translate(-50%, -100%);
-	transform: translate(0%,36%);
+}
+
+#quotepants {
+  transform: translateY(25%);
 }
 
 #quoteone {
