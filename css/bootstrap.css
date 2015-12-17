@@ -4294,6 +4294,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   letter-spacing: 3px;  
 }
 
+.navbar-name:hover {
+  transition: color 0.6s ease-in-out;
+  color: #337ab7;
+}
 /* I came, I saw, I didn't conquer 
 #circle {
     position: absolute;
@@ -4679,6 +4683,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #3ba1f8;
+  transition: color 0.6s ease-in-out;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4865,10 +4870,63 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
+
+#lhovericon {
+    background-image: url(../imgs/linkedin.png);
+    background-size: cover;
+    background-repeat: none;
+    height: 7vh;
+    width: 8vh;
+    top: 2vh;
+}
+
+#lhovericon a {
+    color: rgba(0, 0, 0, 0.0); 
+    text-align: center;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#lhovericon:hover {
+    transition: background-image 0.5s ease;
+    background-image:url(../imgs/linkedinonhover.png);
+}
+
+#bhovericon {
+  background-image: url(../imgs/behance.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 7vh;
+  width: 8vh;
+  top: 2vh;
+}
+
+#bhovericon a {
+    color: rgba(0, 0, 0, 0.0); 
+    text-align: center;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#bhovericon:hover { 
+  transition: background-image 0.5s ease;
+  background-image: url(../imgs/behanceonhover.png);
+}
+
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: rgba(255, 255, 255, .85);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, .3); 
+}
+
+footer p {
+    margin: 0;
+    padding: 25px 0;
+    color: #c8cfe3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .breadcrumb {
