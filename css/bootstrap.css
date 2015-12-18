@@ -4380,7 +4380,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 1.8vmin;
   color: #d2d9ef;
   right: 26vw;
-  bottom: 3vh;
+  bottom: 8vh;
 }
 
 @media (max-width: 768px) {
