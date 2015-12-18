@@ -4309,14 +4309,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background: rgba(169, 169, 169, .3);
     z-index: -1;
     top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50);
-	transform: translate(-50%, -50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50);
+  transform: translate(-50%, -50%);
     
-}*/
+}
 
 #ellipse {
     background-image: url(/imgs/ellipse.png);
@@ -4324,7 +4324,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: 65vh;
     background-size: contain;
     background-position: center;
-}
+}*/
 
 #quotation {
   position:relative;
@@ -4355,7 +4355,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-weight: 400;
   font-size: 26.0vmin;
   color: #d2d9ef;
-  display: block;
   left: 25vw;
 }
 

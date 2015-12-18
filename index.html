@@ -18,7 +18,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,20 +50,22 @@
     
     <!--Content-->
     <div class="container"> 
-        <div class="row">
-           <div class="col-lg-12">
-               <div id="quotation">
-                   <p id="quoteone">"</p>
-                   <p id="quotetwo">"</p>
-                   <p class="text-center" id="quotepants">
-                   Supposing is<br><em>good</em>,<br>but finding out <br>is <strong>
-                   <font style="color:#5698d4;">better</font></strong>
-                   </p>    
-               </div>        
-               <p id="twain">- Mark Twain</p>
-               <br><br>
-            </div>
+      <div class="row">
+         <div data-parallax='{"y": 30, "from-scroll": 50, "distance": 0, "smoothness": 50}' class="col-lg-12">
+            <div id="quotation">
+             <p id="quoteone" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 50}'>"</p>
+             <p id="quotetwo" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 50}'>"</p>
+             <div id="quote-parallax" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 30}'>
+               <p class="text-center" id="quotepants">
+               Supposing is<br><em>good</em>,<br>but finding out <br>is <strong>
+               <font style="color:#5698d4;">better</font></strong>
+               </p>
+             </div>    
+           </div>        
+           <p  id="twain" data-parallax='{"y": -5, "from-scroll": 50, "distance": 0, "smoothness": 50}'>- Mark Twain</p>
+           <br><br>
         </div>
+      </div>
     </div>
     <div class="container">
           <div class="row">
