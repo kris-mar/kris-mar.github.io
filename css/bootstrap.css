@@ -11,7 +11,7 @@ html {
 }
 body {
   margin: 0;
-  background-image:url(../imgs/congruent_outline.png);
+  background-image:url(../imgs/outlets.png);
   background-repeat: repeat;
 }
 article,
@@ -1084,11 +1084,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: #999;
+  background-color: #c8cfe3;
 }
 input,
 button,
@@ -1187,9 +1188,9 @@ h6,
 .h5,
 .h6 {
   font-family: 'Roboto Slab';
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
-  color: inherit;
+  color: #5698d4;
 }
 h1 small,
 h2 small,
@@ -4284,12 +4285,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-name {
   display:inline-table;
-  padding: 25px 30px 25px 30px;
+  padding: 25px 30px 25px 15px;
   font-size: 20px;
   line-height: 30px; 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #c8cfe3;
   letter-spacing: 3px;  
 }
@@ -4337,6 +4338,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
   background-image: url(../imgs/ellipse.png);
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   height: 65vh;
   background-size: contain;
   background-position: center;
@@ -4380,6 +4382,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #d2d9ef;
   right: 26vw;
   bottom: 8vh;
+}
+
+.icon-skills {
+  margin: auto;
+  left: 50%;
+  right: 50%;
 }
 
 @media (max-width: 768px) {
@@ -4655,7 +4663,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(33, 33, 33, .85);
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4913,17 +4921,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: rgba(255, 255, 255, .85);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
-    background-color: rgba(0, 0, 0, .3); 
+    background-color: rgba(33, 33, 33, .85); 
 }
 
 footer p {
     margin: 0;
     padding: 25px 0;
     color: #c8cfe3;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
