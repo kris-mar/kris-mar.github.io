@@ -4384,11 +4384,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   bottom: 8vh;
 }
 
-.icon-skills {
-  margin: auto;
-  left: 50%;
-  right: 50%;
+#icon-skills {
+  font-size: 400%;
+  text-align: center;
+  display: block;
 }
+
+.icon-skills {
+  font-size: 400%;
+  text-align: center;
+  display: block;
+}
+
+.icon-skills:hover {
+  color: #3ba1f8;
+  transition: color 0.6s ease-in-out;
+  background-color: transparent;
+}
+
 
 @media (max-width: 768px) {
     #quotation {
@@ -4932,7 +4945,7 @@ footer p {
     margin: 0;
     padding: 25px 0;
     color: #c8cfe3;
-    font-size: 17px;
+    font-size: 80%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
