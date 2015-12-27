@@ -4,7 +4,7 @@ $(function() {
  
   window.setTimeout(function() {
     $('.icon-skills').removeClass('hover');
-  }, 600);
+  }, 900);
   
   $('.hover-pencil').hover(function(){
     $('.ti-ruler-pencil').addClass('hover');
