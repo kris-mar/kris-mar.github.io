@@ -4300,6 +4300,49 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #337ab7;
 }
 
+.behance-overlay {
+  display: block;
+  background-color: rgba(86, 152, 212, .95);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: center;
+  -webkit-transition: cubic-bezier(.77,0,.175,1).8s;
+  transition: cubic-bezier(.77,0,.175,1).5s;
+  -webkit-clip-path: circle(0% at 50% 50%);
+  clip-path: circle(0% at 50% 50%);  
+}
+
+.portfolio-circle:hover .behance-overlay {
+ -webkit-clip-path: circle(100% at 50% 50%);
+  clip-path: circle(100%  at 50% 50%);   
+}
+
+.behance-title {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  line-height: 2vmin;
+  z-index: 2;
+}
+
+.behance-title-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3vmin;
+  line-height: 3vmin;
+  color: #fff;
+  display: block;    
+}
+
+.behance-title-caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2.5vmin;
+  color:#e8e8e8;
+  display: block;
+}
 .behance-quickview {
   display: none;
   background-image: url(../imgs/portfolio/behance.png);
@@ -4316,7 +4359,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -ms-transform:(-50%, 100%);
   transform: translate(0%, 200%);
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .behance-quickview:before{
@@ -4366,7 +4409,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .portfolio-circle:hover .slide {
-  transform: translateY(-25%);
+  transform: translateY(-80%);     
 }
 
 /* I came, I saw, I didn't conquer 
