@@ -1175,6 +1175,72 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -5008,6 +5074,36 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
+}
+
+.form-title {
+    font-family: 'Roboto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    color: gray;
+    line-height: 40px; 
+    padding-left: 10px;
+}
+
+.form-text {
+    border: 3px #337ab7 solid;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form-button-submit {
+    background-color: #337ab7;
+    font: 'Roboto Sans', sans-serif;
+    text-transform: uppercase;
+    color: #dde3f5;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10vmin;
+    
 }
 
 #lhovericon {
