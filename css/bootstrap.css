@@ -4537,7 +4537,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 #quoteone {
   position: absolute;
   z-index: 15;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Adelle', serif;
   font-weight: 400;
   font-size: 26.0vmin;
   color: #d2d9ef;
@@ -4548,7 +4548,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 #quotetwo {
   position: absolute;
   z-index: 16;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Adelle', serif;
   font-weight: 400;
   font-size: 26.0vmin;
   color: #d2d9ef;
