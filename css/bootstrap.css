@@ -4597,9 +4597,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #quoteone {
     left: 20.5vw;
+    font-size: 3.5em;
   }
   #quotetwo {
     right: 22vw;
+    font-size: 3.5em;
   }
 }
 
