@@ -4600,7 +4600,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
     #quoteone {
         left: 3vw;
-        top: 5vh;
     }
     #quotetwo {
         right: 2vw;
@@ -4610,6 +4609,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         bottom: 4vh;
         font-size: 2vh;
     }
+    .portfolio-circle {
+        width: 60vmin;
+        height: 60vmin;
+        margin-left: 15vmin;
+        margin-bottom: 4vmin;
+    }
 } 
 
 @media (max-width: 375px) {
@@ -4618,7 +4623,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         transform: translateY(-6%);
     }
     #quoteone {
-        left: 5vw;
+        left: -1vw;
         top: 9vh;
     }
     #quotetwo {
@@ -4636,11 +4641,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 1440px) {
     #quoteone {
-        left: 19vw;
-        top: 2vh;
+        left: 15vw;
     }
     #quotetwo {
-        right: 19vw;
+        right: 18vw;
     }
     #twain {
         right: 20vw;
@@ -5117,7 +5121,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     background-repeat: none;
     height: 7vh;
     width: 8vh;
-    top: 2vh;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
 }
 
 #lhovericon a {
@@ -5137,7 +5142,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-repeat: none;
   height: 7vh;
   width: 8vh;
-  top: 2vh;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
 }
 
 #bhovericon a {
@@ -5162,7 +5168,8 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
     padding: 25px 0;
     color: #c8cfe3;
     font-size: 80%;
