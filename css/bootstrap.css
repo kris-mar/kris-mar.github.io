@@ -5168,9 +5168,8 @@ footer {
 }
 
 footer p {
-    margin-top: 3vmin;
+    margin-top: 5vmin;
     margin-bottom: 3vmin;
-    padding: 25px 0;
     color: #c8cfe3;
     font-size: 80%;
     font-family: 'Roboto', sans-serif;
