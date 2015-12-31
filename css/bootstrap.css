@@ -4594,7 +4594,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
-@media (min-width: 2880px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #quoteone {
     left: 20.5vw;
   }
