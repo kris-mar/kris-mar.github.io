@@ -11,7 +11,7 @@ html {
 }
 body {
   margin: 0;
-  background-image:url(../imgs/congruent_outline.png);
+  background-image:url(../imgs/outlets.png);
   background-repeat: repeat;
 }
 article,
@@ -1084,11 +1084,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: #999;
+  background-color: #c8cfe3;
 }
 input,
 button,
@@ -1174,6 +1175,72 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -1187,9 +1254,9 @@ h6,
 .h5,
 .h6 {
   font-family: 'Roboto Slab';
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
-  color: inherit;
+  color: #5698d4;
 }
 h1 small,
 h2 small,
@@ -4284,12 +4351,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-name {
   display:inline-table;
-  padding: 25px 30px 25px 30px;
+  padding: 25px 30px 25px 15px;
   font-size: 20px;
   line-height: 30px; 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #c8cfe3;
   letter-spacing: 3px;  
 }
@@ -4298,6 +4365,119 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   transition: color 0.6s ease-in-out;
   color: #337ab7;
 }
+
+.behance-overlay {
+  display: block;
+  background-color: rgba(86, 152, 212, .95);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: center;
+  -webkit-transition: cubic-bezier(.77,0,.175,1).8s;
+  transition: cubic-bezier(.77,0,.175,1).5s;
+  -webkit-clip-path: circle(0% at 50% 50%);
+  clip-path: circle(0% at 50% 50%);  
+}
+
+.portfolio-circle:hover .behance-overlay {
+ -webkit-clip-path: circle(100% at 50% 50%);
+  clip-path: circle(100%  at 50% 50%);   
+}
+
+.behance-title {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  line-height: 2vmin;
+  z-index: 2;
+}
+
+.behance-title-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3vmin;
+  line-height: 3vmin;
+  color: #fff;
+  display: block;    
+}
+
+.behance-title-caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2.5vmin;
+  color:#e8e8e8;
+  display: block;
+}
+.behance-quickview {
+  display: none;
+  background-image: url(../imgs/portfolio/behance.png);
+  -webkit-transition: cubic-bezier(.77, 0, .175,1).5s;
+  transition: cubic-bezier(.77,0,.175,1).5s;
+  width: 5vmin;
+  height: 5vmin;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 55%;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform:(-50%, 100%);
+  -ms-transform:(-50%, 100%);
+  transform: translate(0%, 200%);
+  bottom: 0;
+  z-index: 3;
+}
+
+.behance-quickview:before{
+  content: "view on";
+  position:absolute;
+  top: 50%;
+  white-space: nowrap;
+  -webkit-transform: translate (100%, 50%);
+  -ms-transform: translate (-100%, -50%);
+  transform: translate(-105%, -45%);
+  left: -5%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2vmin;
+}
+
+.portfolio-circle {
+  width: 35vmin;
+  height: 35vmin;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50%;  
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-clip: border-box;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+  transition: cubic-bezier(.77,0,.175,1).5s;
+  transition-property: initial;
+  transition-duration: 0.5s;
+  transition-timing-function: (.77, 0, 0.175, 1);
+  transition-delay: initial;
+  overflow: hidden;
+}
+
+.portfolio-circle:hover {
+  transform: translateY(-10px);
+  -webkit-transform:translateY(-10px);
+  -ms-transform: translateY(-10px);
+  box-shadow: 0 12px 10px rgba(0,0,0,.2);
+}
+
+.portfolio-circle:hover .behance-quickview {
+  display: block;
+}
+
+.portfolio-circle:hover .slide {
+  transform: translateY(-80%);     
+}
+
 /* I came, I saw, I didn't conquer 
 #circle {
     position: absolute;
@@ -4337,6 +4517,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
   background-image: url(../imgs/ellipse.png);
   background-repeat: no-repeat;
+  background-blend-mode: overlay;
   height: 65vh;
   background-size: contain;
   background-position: center;
@@ -4380,6 +4561,31 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #d2d9ef;
   right: 26vw;
   bottom: 8vh;
+}
+
+#icon-skills {
+  font-size: 400%;
+  text-align: center;
+  display: block;
+  transition: color 0.6s ease-out;
+}
+
+.icon-skills {
+  font-size: 400%;
+  text-align: center;
+  display: block;
+}
+
+.icon-skills:hover {
+  color: #3ba1f8;
+  transition: color 0.6s ease-in-out;
+  background-color: transparent;
+}
+
+#icon-skills.hover {
+  color: #3ba1f8;
+  transition: color 0.6s ease-in-out;
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -4655,7 +4861,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(33, 33, 33, .85);
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4870,6 +5076,36 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 
+.form-title {
+    font-family: 'Roboto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    color: gray;
+    line-height: 40px; 
+    padding-left: 10px;
+}
+
+.form-text {
+    border: 3px #337ab7 solid;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form-button-submit {
+    background-color: #337ab7;
+    font: 'Roboto Sans', sans-serif;
+    text-transform: uppercase;
+    color: #dde3f5;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10vmin;
+    
+}
+
 #lhovericon {
     background-image: url(../imgs/linkedin.png);
     background-size: cover;
@@ -4913,17 +5149,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: rgba(255, 255, 255, .85);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
-    background-color: rgba(0, 0, 0, .3); 
+    background-color: rgba(33, 33, 33, .85); 
 }
 
 footer p {
     margin: 0;
     padding: 25px 0;
     color: #c8cfe3;
+    font-size: 80%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
