@@ -4537,23 +4537,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 #quoteone {
   position: absolute;
   z-index: 15;
-  font-family: 'Adelle', serif;
+  font-family: 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 26.0vmin;
+  font-size: 34.0vmin;
+  top: -5.0vmin;
   color: #d2d9ef;
-  left: 25vw;
+  left: 22vw;
 }
 
 
 #quotetwo {
   position: absolute;
   z-index: 16;
-  font-family: 'Adelle', serif;
+  font-family: 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 26.0vmin;
+  font-size: 34.0vmin;
   color: #d2d9ef;
   right: 25vw;
-  top: 40vh;
+  top: 35vh;
 }
 
 #twain {
