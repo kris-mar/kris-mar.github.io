@@ -4594,6 +4594,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
+@media (max-width: 2880px) {
+  #quoteone {
+    left: 20.5vw;
+  }
+  #quotetwo {
+    right: 22vw;
+  }
+}
+
 @media (max-width: 768px) {
     #quotation {
         font-size: 7.5vh;
