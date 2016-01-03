@@ -4514,6 +4514,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
 }
 
+.portfolio-circle:hover .tumblr-quickview {
+  display: block;
+}
+
 .portfolio-circle:hover .slide {
   transform: translateY(-80%);     
 }
