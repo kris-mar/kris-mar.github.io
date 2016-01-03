@@ -4433,6 +4433,41 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 3;
 }
 
+.tumblr-quickview {
+  display: none;
+  background-image: url(../imgs/portfolio/tumblr.png);
+  -webkit-transition: cubic-bezier(.77, 0, .175,1).5s;
+  transition: cubic-bezier(.77,0,.175,1).5s;
+  width: 5vmin;
+  height: 5vmin;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 55%;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform:(-50%, 100%);
+  -ms-transform:(-50%, 100%);
+  transform: translate(0%, 200%);
+  bottom: 0;
+  z-index: 3;
+}
+
+.tumblr-quickview:before{
+  content: "view on";
+  position:absolute;
+  top: 50%;
+  white-space: nowrap;
+  -webkit-transform: translate (100%, 50%);
+  -ms-transform: translate (-100%, -50%);
+  transform: translate(-105%, -45%);
+  left: -5%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2vmin;
+}
+
 .behance-quickview:before{
   content: "view on";
   position:absolute;
