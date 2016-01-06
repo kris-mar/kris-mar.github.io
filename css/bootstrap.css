@@ -4485,15 +4485,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .portfolio-circle {
-  width: 35vmin;
-  height: 35vmin;
+  width: 40vmin;
+  height: 40vmin;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50%;  
   background-repeat: no-repeat;
   background-size:cover;
   background-clip: border-box;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,.3);
   transition: cubic-bezier(.77,0,.175,1).5s;
   transition-property: initial;
