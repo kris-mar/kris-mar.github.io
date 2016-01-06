@@ -4633,16 +4633,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  #quoteone {
-    left: 20.5vw;
-    font-size: 4em;
-  }
-  #quotetwo {
-    right: 22vw;
-    font-size: 4em;
-  }
-}
 
 @media (max-width: 768px) {
     #quotation {
@@ -4689,6 +4679,31 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 
+@media (min-width: 992px) {
+  #quoteone {
+     left: 9vw;
+ }
+ #quotetwo {
+     right: 10vw;
+ }
+ #twain {
+     right: 15vw;
+     bottom: 3vh;
+     font-size: 2vh;
+ }
+ .portfolio-circle {
+    width: 25vmin;
+    height: 25vmin;
+  }
+ .behance-title-name {
+    font-size: 2vmin;
+    line-height: 2vmin;
+  }
+ .behance-title-caption {
+    font-size: 2vmin;
+  }  
+}
+
 @media (min-width: 1200px) {
  #quoteone {
      left: 9vw;
@@ -4714,6 +4729,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #quoteone {
+    left: 20.5vw;
+    font-size: 4em;
+  }
+  #quotetwo {
+    right: 22vw;
+    font-size: 4em;
+  }
+}
 
 .navbar-name:hover,
 .navbar-brand:hover,
