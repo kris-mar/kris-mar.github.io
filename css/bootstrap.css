@@ -4689,18 +4689,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 
-@media (min-width: 1440px) {
-    #quoteone {
-        left: 15vw;
-    }
-    #quotetwo {
-        right: 18vw;
-    }
-    #twain {
-        right: 20vw;
-        bottom: 3vh;
-        font-size: 2vh;
-    }
+@media (min-width: 1200px) {
+ #quoteone {
+     left: 9vw;
+ }
+ #quotetwo {
+     right: 10vw;
+ }
+ #twain {
+     right: 15vw;
+     bottom: 3vh;
+     font-size: 2vh;
+ }
+ #portfolio-circle {
+    width: 25vmin;
+    height: 25vmin;
+  }
+ .behance-title-name {
+    font-size: 2vmin;
+    line-height: 2vmin;
+  }
+ .behance-title-caption {
+    font-size: 2vmin;
+  }
 }
 
 
