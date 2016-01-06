@@ -4701,7 +4701,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
      bottom: 3vh;
      font-size: 2vh;
  }
- #portfolio-circle {
+ .portfolio-circle {
     width: 25vmin;
     height: 25vmin;
   }
