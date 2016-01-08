@@ -2,7 +2,7 @@
   "name": "kris-mar.github.io",
   "version": "1.0.0",
   "description": "Make that magic",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
   },
