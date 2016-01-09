@@ -1375,7 +1375,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 5vh;
 }
 h3,
 .h3 {
@@ -4549,17 +4549,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 5;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  font-size: 7.5vmin;
+  font-size: 6vmin;
+  text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   width: 100%;
   background-image: url(../imgs/ellipse.png);
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  height: 65vh;
-  background-size: contain;
+  height: 50vh;
+  background-size:contain;
   background-position: center;
+}
 
+#quotation p {
+    margin-left: 2%;
+}
+
+.intro-text {
+  padding: 0 15%;
 }
 
 #quotepants {
@@ -4573,22 +4580,32 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 15;
   font-family: 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 34.0vmin;
+  font-size: 25.0vmin;
   top: -5.0vmin;
   color: #d2d9ef;
   left: 22.5vw;
 }
 
+.arrow-scroll {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    text-align: center;
+    color: #d2d9ef;
+    font-size: 5vmin;
+}
 
 #quotetwo {
   position: absolute;
   z-index: 16;
   font-family: 'Times New Roman', serif;
   font-weight: 400;
-  font-size: 34.0vmin;
+  font-size: 25.0vmin;
   color: #d2d9ef;
-  right: 24vw;
-  top: 35vh;
+  right: 22.5vw;
+  top: 30vh;
 }
 
 #twain {
@@ -4596,7 +4613,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 30;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 1.8vmin;
   color: #d2d9ef;
   right: 26vw;
@@ -4628,6 +4645,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
+.about-myself {
+  color: #4a4a4a; 
+  text-align: center;
+}
 
 @media (max-width: 768px) {
     #quotation {
