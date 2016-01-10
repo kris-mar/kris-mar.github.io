@@ -1690,9 +1690,6 @@ pre code {
   .container {
     width: 750px;
   }
-  .section {
-        padding: 150px 0
-    }
 }
 @media (min-width: 992px) {
   .container {
@@ -4560,6 +4557,12 @@ header {
   padding: 0 15%;
 }
 
+.portfolio-background {
+  background:#F1F1F1;
+  background-repeat: repeat;
+  background-attachment: scroll;  
+}
+
 #quotepants {
   -webkit-transform: translateY(25%);
           transform: translateY(25%);
@@ -4578,7 +4581,7 @@ header {
 
 .arrow-scroll {
     text-align: center;
-    color: #d2d9ef;
+    color: #ddd;
     font-size: 5vmin;
     padding-bottom: 3vh;
     padding-top: 5vh;
@@ -4644,9 +4647,18 @@ header {
   background-color: transparent;
 }
 
+.skills-details {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  opacity: .75;
+}
+
 .about-myself {
   color: #4a4a4a; 
-  padding: 40px 15% 0;
+  padding-top: 15px;
+  padding-bottom: 50px;
   line-height: 30px;
 }
 

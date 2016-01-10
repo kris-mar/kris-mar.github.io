@@ -1,5 +1,4 @@
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+// page scrolling feature
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
