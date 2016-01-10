@@ -1,33 +1,26 @@
 $(function() {
 
-  $('.icon-skills').addClass('hover');
- 
-  window.setTimeout(function() {
-    $('.icon-skills').removeClass('hover');
-  }, 900);
-  
-  $('.hover-pencil').hover(function(){
-    $('.ti-ruler-pencil').addClass('hover');
-  }, function(){
-    $('.ti-ruler-pencil').removeClass('hover');
-  });
+  function addHoverEvent(trigger, target) {
+    $(trigger).hover(function(){
+      $(target).addClass('hover');
+    }, function(){
+      $(target).removeClass('hover');
+    });
+  }
+    
+  addHoverEvent('.hover-pencil', '.ti-ruler-pencil');
+  addHoverEvent('.hover-desktop', '.ti-desktop');  
+  addHoverEvent('.hover-vector', '.ti-vector');  
+  addHoverEvent('.hover-palette', '.ti-palette');  
 
-  $('.hover-desktop').hover(function(){
-    $('.ti-desktop').addClass('hover');
-  }, function(){
-    $('.ti-desktop').removeClass('hover');
-  });
-
-  $('.hover-vector').hover(function(){
-    $('.ti-vector').addClass('hover');
-  }, function(){
-    $('.ti-vector').removeClass('hover');
-  });
-
-  $('.hover-palette').hover(function(){
-    $('.ti-palette').addClass('hover');
-  }, function(){
-    $('.ti-palette').removeClass('hover');
+   $('.icon-skills').one('inview', function(event, isInView) {
+    if (isInView) {
+     console.log('triggered inview');
+     $('.icon-skills').mouseover();
+      window.setTimeout(function() {
+        $('.icon-skills').mouseleave();
+      }, 900);
+    }
   });
 
 });
