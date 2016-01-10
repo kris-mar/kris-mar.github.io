@@ -1375,7 +1375,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 5vh;
+  font-size: 4vh;
 }
 h3,
 .h3 {
@@ -1696,6 +1696,9 @@ pre code {
   .container {
     width: 750px;
   }
+  .section {
+        padding: 150px 0
+    }
 }
 @media (min-width: 992px) {
   .container {
@@ -4357,14 +4360,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-name {
   display:inline-table;
-  padding: 25px 30px 25px 15px;
-  font-size: 20px;
-  line-height: 30px; 
+  padding: 18px 10px;
+  font-size: 20px; 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #c8cfe3;
   letter-spacing: 3px;  
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+transition: all .3s
 }
 
 .navbar-name:hover {
@@ -4549,16 +4554,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 5;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  font-size: 6vmin;
+  font-size: 5.4vmin;
   text-align: center;
   color: #ffffff;
   width: 100%;
   background-image: url(../imgs/ellipse.png);
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  height: 50vh;
+  height: 45vh;
   background-size:contain;
-  background-position: center;
+  background-position: center center;
 }
 
 #quotation p {
@@ -4574,7 +4579,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
           transform: translateY(25%);
 }
 
-
 #quoteone {
   position: absolute;
   z-index: 15;
@@ -4587,14 +4591,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .arrow-scroll {
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    top: 90%;
-    left: 50%;
     text-align: center;
     color: #d2d9ef;
     font-size: 5vmin;
+    padding-bottom: 3vh;
+    padding-top: 5vh;
 }
 
 #quotetwo {
@@ -4608,7 +4609,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: 30vh;
 }
 
-#twain {
+.about-heading {
+    margin: 15px 0;
+    font-size: 6vh;
+}
+
+/*#twain {
   position: absolute;
   z-index: 30;
   font-family: 'Roboto', sans-serif;
@@ -4618,7 +4624,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #d2d9ef;
   right: 26vw;
   bottom: 8vh;
-}
+}*/
+
 
 #icon-skills {
   font-size: 400%;
@@ -4647,7 +4654,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 .about-myself {
   color: #4a4a4a; 
-  text-align: center;
+  padding: 40px 15% 0;
+  line-height: 30px;
 }
 
 @media (max-width: 768px) {
@@ -4972,10 +4980,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(33, 33, 33, .85);
+  background-color: rgba(33, 33, 33, .0);
+  padding: 25px 0;
+  transition: padding .3s;
+  -webkit-transition:.3s;
+  --moz-transition:.3s;
+      
+  
 }
 .navbar-default .navbar-brand {
   color: #777;
+      -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4989,7 +5006,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #c8cfe3;
   width: auto;
   font-size: 18px;
-  line-height: 50px; 
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -5184,6 +5200,16 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
+}
+
+.navbar-shrink {
+ background-color: rgba(33, 33, 33, .98);
+ padding: 5px 2px 6px 0px;
+}
+
+.navbar-shrink li a {
+ background-color: rgba(33, 33, 33, .98);
+ padding: 23px 15px;
 }
 
 .form-title {

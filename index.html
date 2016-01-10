@@ -35,119 +35,83 @@
     <![endif]-->
     
 </head>
-<body>
+<body id="page-top" class="index">
      <!-- Navigation -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../index.html"> <img alt="Brand" src="imgs/Logo_02.png" width="50px" height="50px"></a>
-                <a class="navbar-name" href="index.html">Kristen Hanlon</a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"> <img alt="Brand" src="imgs/Logo_02.png" width="40px" height="40px"></a>
+                <a class="navbar-name page-scroll" href="#page-top">Kristen Hanlon</a>
             </div>
-            <div>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li> 
-                <li><a href="contact.html">Contact</a></li> 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#portfolio">Portfolio</a></li> 
+                <li><a class="page-scroll" href="#contact">Contact</a></li> 
               </ul>
             </div>
         </div>
     </nav>
     
     <!-- First Content-->
-<div class="container-fluid" style="height:100vh;width:100vw;">
+
     <div class="container"> 
-      <div class="row">
-         <div data-parallax='{"y": 30, "from-scroll": 50, "distance": 0, "smoothness": 50}' class="col-lg-12">
-            <div id="quotation">
+         <div data-parallax='{"y": 30, "from-scroll": 50, "distance": 0, "smoothness": 50}' class="col-lg-12" style="padding-top:15vh">
+            <div class="row" id="quotation">
              <!--<p id="quoteone" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 50}'>&#8220</p>
              <p id="quotetwo" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 50}'>&#8221
                 </p>-->
-             <div id="quote-parallax" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 30}'>
+             <div class="intro-text" id="quote-parallax" data-parallax='{"y": 15, "from-scroll": 50, "distance": 0, "smoothness": 30}'>
                <p id="quotepants">
                Supposing is<br><em>good</em>,<br>but finding out <br>is <strong>
                <font style="color: #5698d4;">better</font></strong>
                </p>
              </div>    
            </div>        
-           <!--<p id="twain" data-parallax='{"y": -5, "from-scroll": 50, "distance": 0, "smoothness": 50}'>- Mark Twain</p>-->
-           <br><br>
+           <div class="row col-lg-12" >
+              <h2 class="text-center">Learn the rules so you know how to break them properly</h2>
+              <p class="text-center">Hey! I'm Kristen. I design branding, advertising, front-end, and UX/UI; I'm also a traditional artist and I create illustrations and portraiture primarily with pencils. My goal is to create multifaceted experiences with carefully crafted designs. I've worked with small businesses and large corporations alike. Some of the brands I’ve designed for are Dunkin' Donuts, Party City, and AutoNation.</p>
+           </div>
+           <div class="row col-lg-12 arrow-scroll">
+               <a class="page-scroll" href="#about"><span class="glyphicon glyphicon-chevron-down"></a></span>
+             </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid">
-          <div class="row">
-                    <div class="col-lg-12">
-                        <p><h2 class="text-center">Learn the rules so you know how to break them properly</h2></p>
-                        <p class="intro-text text-center">Hey! I'm Kristen. I design branding, advertising, front-end, and UX/UI; I'm also a traditional artist and I create illustrations and portraiture primarily with pencils. My goal is to create multifaceted experiences with carefully crafted designs. I've worked with small businesses and large corporations alike. Some of the brands I’ve designed for are Dunkin' Donuts, Party City, and AutoNation.</p>
-                    </div>
-          </div>
-    </div>
-    <span data-parallax='{"y": 30, "from-scroll": 50, "distance": 0, "smoothness": 50}' class="glyphicon glyphicon-circle-arrow-down arrow-scroll"></span>
-</div>
-<div class="container-fluid" style="height:100vh;width:100vw;background-color:#fafafa;">
-    <div class="container" style="padding:200px 60px 150px;"> 
-            <div class="col-lg-12">
-                <p><h2 class="text-center">Kristen Hanlon: artist, designer, pug expert</h2></p>
-                <p><hr></p>
-                <p class="about-myself">My introduction to design began as a complete mistake. In college I was originally a STEM student, working in a research lab and pursuing a career in molecular genetics. I was happily going through my life when upon being elected as the secretary of a biology club, the responsibility of designing a website and creating a logo was thrust onto me. Frustrated, I hit the internet to learn where to begin. I begrudgingly started working on a branding package and before I knew it, I was flabbergasted; I fell in love! I couldn’t believe it! The person who spent 8 hours a day in a sterile white coat was mesmerized by colors and shapes! I was undeniably enamored with combining all these elements to create a product that would inspire other students and bring people together. I felt like I was on top of the world and I knew then that there was no going back.</p>
-
-<p class="about-myself">Still a STEM student at heart, I love solving creative visual problems with logic.<a href="docs/hanlon_resume.pdf" target="_blank"> Take a copy of my resume!</a></p><br>    
+<section id="about">
+        <div class="container-fluid" style="background:#FFFFFF;padding:150px 0;">
+              <div class="col-lg-12 text-center">
+                <h2 class="about-heading">Artist, Designer, Pug Expert</h2>
+                <p class="about-myself">Long before I discovered my passion for design design, I was a STEM student; working in a research lab and pursuing a career in molecular genetics, I was happily going through my life as a biologist. A couple years into college I was asked to make a website for a campus science club. I had no idea where to begin so I sat down one night and begrudgingly began to research and create. Hours fly by and before I knew it, I was flabbergasted! I fell in love! I couldn’t believe it! The person who spent 8 hours a day in a sterile white coat was mesmerized by colors and shapes! I became undeniably enamored combining visual elements to create a product that could inspire and bring people together. I felt like I was on top of the world and I knew then that there was no going back. Still a STEM student at heart, I love solving visual problems with creative logic.</p>
+              </div>
+              <div class="col-sm-3 hover-desktop text-center">
+                <p><span class="icon-skills ti-desktop" id="icon-skills"></span></p>
+                <h4 class="text-center">FRONT END WEB</h4>
+                <p class="small">I develop responsive front-end designs either from scratch or with the help of popular frameworks like Bootstrap. I have worked for over a year providing web services to the College of Education at UCF; I mainly work with DreamWeaver, coldfusion, Brackets, and frameworks like Bootstrap.<br></p>
+                <p>
+                    <ul>
+                        <li class="small">HTML5 &amp; CSS3</li>
+                        <li class="small">JS/JQuery</li> 
+                        <li class="small">CMS</li>
+                        <li class="small">Git based version control</li>
+                   </ul>
+                </p>
             </div>
-        </div>
-    <div class="row">
-        <div class="col-sm-3 hover-desktop">
-            <p><span class="icon-skills ti-desktop" id="icon-skills"></span></p>
-            <h4 class="text-center">FRONT END WEB</h4>
-            <p class="small">I develop responsive front-end designs either from scratch or with the help of popular frameworks like Bootstrap. I have worked for over a year providing web services to the College of Education at UCF; I mainly work with DreamWeaver, coldfusion, Brackets, and frameworks like Bootstrap.<br></p>
-            <p>
-                <ul>
-                    <li class="small">HTML5 &amp; CSS3</li>
-                    <li class="small">JS/JQuery</li> 
-                    <li class="small">CMS</li>
-                    <li class="small">Git based version control</li>
-               </ul>
-            </p>
-        </div>
-        <div class="col-sm-3 hover-pencil" >
-            <span class="icon-skills ti-ruler-pencil" id="icon-skills"></span>
-            <h4 class="text-center">UX/UI DESIGN</h4>
-            <p id="hovernator" class="small">As a designer, I really love creating simple and beautiful interfaces that help tell a dynamic story. I find UX/UI design to be the most challenging; I love merging the creative processe with testing and refinement.<br>
-                <ul id="hovernator2">
-                    <li class="small" id="hovernator">Assessments</li>
-                    <li class="small" id="hovernator">Wireframing</li> 
-                    <li class="small" id="hovernator">Prototyping</li> 
-               </ul>
-            </p>
-        </div>
-        <div class="col-sm-3 hover-vector">
-            <p><span class="icon-skills ti-vector" id="icon-skills"></span></p>
-            <h4 class="text-center">GRAPHIC DESIGN</h4>
-            <p class="small">I've worked in graphic design now for over 6 years. I really enjoy working with businesses to create creative visual solutions. I have work history not only in graphic design, but also marketing and advertising<br></p>
-            <p>
-                <ul>
-                    <li class="small">Brand identity &amp; management</li>
-                    <li class="small">Packaging design</li> 
-                    <li class="small">Advertisements and marketing material</li> 
-                    <li class="small">Editorial and publications</li>
-               </ul>
-            </p>
-        </div>
-        <div class="col-sm-3 hover-palette">
-            <p><span class="icon-skills ti-palette" id="icon-skills"></span></p>
-            <h4 class="text-center">TRADITIONAL MEDIA</h4>
-            <p class="small">I love to make things with my hands, from staining wood to large scale pencil portraits. I've won awards from institutions like the Scholastic Art Showcase and I have pieces shown around small galleries in Orlando.<br></p>
-            <p>
-                <ul>
-                    <li class="small">Graphite &amp; color portraiture</li>
-                    <li class="small">Illustration</li> 
-                    <li class="small">Poster design</li> 
-               </ul>
-            </p>
-        </div>
-  </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+            </div>
+   </div>
 </div>
-</div>
+</section>
     
     
     
@@ -164,9 +128,12 @@
     </footer>
     
     <!-- jQuery -->
-    
     <script src="js/jquery.js"></script>
-
+    <!-- Plugins JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/animatednav.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/easing.js"></script>
 
                 
 </body>
