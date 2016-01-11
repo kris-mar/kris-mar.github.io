@@ -4699,6 +4699,10 @@ header {
     }
 }
 
+@media (max-height: 480px) {
+    #quotepants {margin-top: 3vmin;}
+}
+
 @media (min-width: 480px) {
     #quotation {
         font-size: 4.9vh;  
