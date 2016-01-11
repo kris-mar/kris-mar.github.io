@@ -13,13 +13,13 @@ $(function() {
   addHoverEvent('.hover-vector', '.ti-vector');  
   addHoverEvent('.hover-palette', '.ti-palette');  
 
-   $('.icon-skills').one('inview', function(event, isInView) {
+   $('.icon-skills').bind('inview', function(event, isInView) {
     if (isInView) {
      console.log('triggered inview');
      $('.icon-skills').mouseover();
       window.setTimeout(function() {
         $('.icon-skills').mouseleave();
-      }, 900);
+      }, 1300);
     }
   });
 

@@ -46,7 +46,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -55,7 +55,7 @@
                 <a class="navbar-brand page-scroll" href="#page-top"> <img alt="Brand" src="imgs/Logo_02.png" width="40px" height="40px"></a>
                 <a class="navbar-name page-scroll" href="#page-top">Kristen Hanlon</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a class="page-scroll" href="#page-top"></a>
@@ -89,18 +89,18 @@
            </div>
            <div class="row col-lg-12 arrow-scroll">
                <a class="page-scroll" href="#about"><span class="glyphicon glyphicon-chevron-down"></a></span>
-             </div>
+           </div>
         </div>
       </div>
 </header>
 <!-- About me -->
 <section id="about">
- <div class="container">
-  <div class="row col-lg-12">
+ <div class="container" >
+  <div class="row col-lg-12" id="quote-parallax">
     <h2 class="about-heading text-center">Artist, Designer, Pug Lover</h2>
     <p class="about-myself text-center">Long before I discovered my passion for design, I was a STEM student. Working in a research lab and studying biology, I had my entire life planned out as a molecular geneticist. A couple years into college, I was asked to make a website for a campus biology club and I begrudgingly accepted. I hit the internet to learn where to begin and got started creating. Hours flew by and before I knew it, I was flabbergasted! I fell in love! I couldn’t believe it! The person who spent 8 hours a day in a sterile white coat was mesmerized by colors and shapes! I was undeniably enamored with combining elements to create a product that could inspire others and bring people together. I felt like I was on top of the world and I knew then that there was no going back. Still a STEM student at heart, I love solving visual problems with creative logic. The tools I use the most are Photoshop, Proto.io, Brackets, Illustrator, and of course good ol' pencil &amp; paper. 
   </div>
-    <div class="row">
+    <div class="row" data-parallax='{"y": 30, "from-scroll": 40, "distance": 0, "smoothness": 70}'>
         <div class="col-md-3 hover-desktop">
             <p><span class="icon-skills ti-desktop" id="desktop-icon"></span></p>
             <h4 class="text-center">FRONT END WEB</h4>
@@ -151,22 +151,22 @@
             </p>
         </div>
     </div>
-<div class="row col-lg-12 arrow-scroll">
+<div class="row arrow-scroll">
    <a class="page-scroll" href="#portfolio"><span class="glyphicon glyphicon-chevron-down"></a></span>
 </div>
 </section>
 <!-- Portfolio -->
 
 <section id="portfolio" class="portfolio-background">     
-<div class="container"> 
+<div class="container" data-parallax='{"y": 100, "from-scroll": 10, "distance": 0, "smoothness": 70}'> 
       <div class="row">
             <div class="col-lg-12">
                 <h2 class="about-heading text-center">My Work</h2>
             </div>
        </div>
       <div class="row" style="padding-top: 15px;">
-          <div class="col-lg-12"><p><h3>Digital</h3></p></div>
-          <div class="col-md-3">
+          <div class="col-lg-12 "><p><h3>Digital</h3></p></div>
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/compass.png);">
                 <a href="https://www.behance.net/gallery/18589799/Compass-Launch" target="_blank">
                   <div class="behance-overlay"> 
@@ -178,7 +178,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/lubalin.png);">
                 <a href="https://www.behance.net/gallery/32106869/Tribute-to-Herb-Lubalin" target="_blank">
                   <div class="behance-overlay"> 
@@ -190,19 +190,19 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/cloakblaster.png);">
                 <a href="https://www.behance.net/gallery/24525961/Cloak-Blaster-Rebrand" target="_blank">
                   <div class="behance-overlay"> 
                   <div class="behance-title">
                     <span class="behance-title-name">Cloak &amp; Blaster</span>
-                    <span class="behance-title-caption">       <small>Branding/Marketing</small></span>
+                    <span class="behance-title-caption"><small>Branding/Marketing</small></span>
                   </div></div>
               </a>
                   <div class="behance-quickview"></div>
               </div> 
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/johnoates.png);">
                 <a href="https://www.behance.net/gallery/24904295/Fictional-Book-Cover" target="_blank">
                   <div class="behance-overlay"> 
@@ -217,7 +217,7 @@
       </div>
     <div class="row"><br></div>
      <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/digitalinjections.png);">
                 <a href="https://www.behance.net/gallery/32417101/Digital-Injections" target="_blank">
                   <div class="behance-overlay"> 
@@ -229,7 +229,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/selfbrand.png);">
                 <a href="https://www.behance.net/gallery/18779443/Self-Re-Branding" target="_blank">
                   <div class="behance-overlay"> 
@@ -241,7 +241,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
-         <div class="col-md-3">
+         <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/sailingclub.png);">
                 <a href="https://www.behance.net/gallery/32415261/Sailing-Club-of-Central-Florida" target="_blank">
                   <div class="behance-overlay"> 
@@ -253,7 +253,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
-         <div class="col-md-3">
+         <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/dailyui.png);">
                 <a href="http://practicemakesdesign.tumblr.com/" target="_blank">
                   <div class="behance-overlay"> 
@@ -269,7 +269,7 @@
     <div class="row">
         <div class="col-lg-12"><p><h3>Traditional</h3></p></div>
           <br>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/portraits.png);">
                 <a href="https://www.behance.net/gallery/14767665/Portraiture-and-Still-Life" target="_blank">
                   <div class="behance-overlay"> 
@@ -281,7 +281,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
-           <div class="col-md-3">
+           <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/myname.png);">
                 <a href="https://www.behance.net/gallery/32418231/Lettering"target="_blank">
                   <div class="behance-overlay"> 
@@ -293,7 +293,7 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
               <div class="portfolio-circle" style="background-image:url(imgs/portfolio/comic.png);">
                 <a href="https://www.behance.net/gallery/32418651/Comic-Book-Cover" target="_blank">
                   <div class="behance-overlay"> 
@@ -305,19 +305,21 @@
                   <div class="behance-quickview"></div>
               </div> 
           </div> 
+     <div class="row col-lg-12 arrow-scroll">
+               <a class="page-scroll" href="#contact"><span class="glyphicon glyphicon-chevron-down"></a></span>
+           </div>
       </div>
     </div> 
 </section>
 <!-- Contact --> 
-<section id="contact"> 
+<section id="contact" id="quote-parallax"> 
 <div class="container"> 
     <div class="row col-lg-12">
           <h2 class="about-heading text-center">Contact Me</h2>
+        <p class="text-center">I'm currently available for freelance and commission, let's work together. <a href="docs/hanlon_resume.pdf" target="_blank">Here's a copy of my resume</a></p>
     </div>
-    <div class="row" style="padding-top: 15px;"><p class="text-center">I'm currently available for freelance and commission, let's work together. <a href="docs/hanlon_resume.pdf" target="_blank">Here's a copy of my resume</a></p></div>
-
 <form id="ajax-contact" action="https://fwdform.herokuapp.com/user/3e811c77-7330-44b7-8017-74199691d529" method="POST">
-    <div class="row text-center">
+    <div class="row text-center" >
         <div class="col-lg-4 col-md-offset-2" > 
             <br>
             <input id="name" class="input form-text form-title" style="width:100%;" name="name" type="text"  placeholder="Name" size="30" /><br /></div>
@@ -339,7 +341,7 @@
 <div class="text-center" id="form-messages"></div>
 </section>
     <!-- Footer -->
-        <footer>
+        <footer class="blck-bkgrnd">
         <div class="container">
             <div class="row">
                 <div class="col-xs-1" id="bhovericon"><a href="https://www.behance.net/KristenHanlon" target="_blank">CLICK ME</a></div>

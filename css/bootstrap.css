@@ -1074,10 +1074,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.42857143;
+  margin: 0;
 }
 input,
 button,
@@ -4396,8 +4398,8 @@ header {
   -webkit-transform-origin: center;
           transform-origin: center;
   transition: cubic-bezier(.77,0,.175,1).5s;
-  -webkit-clip-path: circle(0% at 50% 50%);
-  clip-path: circle(0% at 50% 50%);  
+  -webkit-clip-path: circle(0 at 50% 50%);
+  clip-path: circle(0 at 50% 50%);  
 }
 
 .portfolio-circle:hover .behance-overlay {
@@ -4417,8 +4419,8 @@ header {
 .behance-title-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 3vmin;
-  line-height: 3vmin;
+  font-size: 2vmin;
+  line-height: 2vmin;
   color: #fff;
   display: block;    
 }
@@ -4426,7 +4428,7 @@ header {
 .behance-title-caption {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   color:#e8e8e8;
   display: block;
 }
@@ -4495,8 +4497,8 @@ header {
 }
 
 .portfolio-circle {
-  width: 40vmin;
-  height: 40vmin;
+  width: 25vmin;
+  height: 25vmin;
   border-radius: 50%;  
   background-repeat: no-repeat;
   background-size:cover;
@@ -4549,10 +4551,6 @@ header {
   background-position: center center;
 }
 
-#quotation p {
-    margin-left: 2%;
-}
-
 .intro-text {
   padding: 0 15%;
 }
@@ -4566,6 +4564,7 @@ header {
 #quotepants {
   -webkit-transform: translateY(25%);
           transform: translateY(25%);
+  margin-left: 2%;
 }
 
 #quoteone {
@@ -4662,114 +4661,130 @@ header {
   line-height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) {
     #quotation {
-        font-size: 7.5vh;
-    }
-    #quoteone {
-        left: 3vw;
-    }
-    #quotetwo {
-        right: 2vw;
-    }
-    #twain {
-        right: 3vw;
-        bottom: 4vh;
-        font-size: 2vh;
-    }
-    .portfolio-circle {
-        width: 60vmin;
-        height: 60vmin;
-        margin-left: 15vmin;
-        margin-bottom: 4vmin;
-    }
-} 
-
-@media (max-width: 375px) {
-    #quotation {
-        font-size: 6vh;
-        -webkit-transform: translateY(-6%);
-                transform: translateY(-6%);
-    }
-    #quoteone {
-        left: -1vw;
-        top: 9vh;
-    }
-    #quotetwo {
-        right: 3vw;
+        font-size: 4.9vh;  
     }
     #quotepants {
-        -webkit-transform: translateY(48%);
-                transform: translateY(48%)
+        margin-top: 3.5vh;
+        margin-left: 4.4%;
+        font-size: 4.7vh;
     }
-    #twain {
-        right: 6vw;
-        bottom: 6vh;
-        font-size: 2vh;
+    .arrow-scroll {
+        font-size: 8vh;
+        padding-bottom: 5vh;
+    }
+    .navbar-name {
+        font-size: 5vmin;
+    }
+    .portfolio-circle {
+        height: 45vh;
+        width: 45vh;
+        margin-top:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vmin;
     }
 }
 
-@media (min-width: 992px) {
-  #quoteone {
-     left: 9vw;
- }
- #quotetwo {
-     right: 10vw;
- }
- #twain {
-     right: 15vw;
-     bottom: 3vh;
-     font-size: 2vh;
- }
- .portfolio-circle {
-    width: 25vmin;
-    height: 25vmin;
-  }
- .behance-title-name {
-    font-size: 2vmin;
-    line-height: 2vmin;
-  }
- .behance-title-caption {
-    font-size: 2vmin;
-  }  
+@media (min-width: 768px) {
+    #quotation {
+        font-size: 4.9vh;  
+    }
+    #quotepants {
+        margin-top: 2vh;
+        margin-left: 3%
+    }
+    .arrow-scroll {
+        font-size: 8vh;
+        padding-bottom: 5vh;
+    }
+    .navbar-default {
+        padding: 25px 0;
+        background-color: transparent;
+        transition: padding .3s;
+        border: 0;
+        width: 100vw;
+    }
+    .navbar-name {
+        font-size: 2.5vw;
+    }
+    .portfolio-circle {
+        width: 30vmin;
+        height: 30vmin;
+        margin-top:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vmin;
+    }
 }
 
-@media (min-width: 1200px) {
- #quoteone {
-     left: 9vw;
+@media (min-width:1024px)  {
+    #quotation {
+        font-size: 4.9vh;  
+    }
+    #quotepants {
+        margin-top: 2vh;
+        margin-left: 3%;
+        font-size: 5vh;
+    }
+    .arrow-scroll {
+        font-size: 8vh;
+        padding-bottom: 5vh;
+    }
+    .navbar-default {
+        padding: 25px 0;
+        background-color: transparent;
+        transition: padding .3s;
+        border: 0;
+        width: 100vw;
+    }
+    .navbar-name {
+        font-size: 1em;
+    }
+    .portfolio-circle {
+        width: 30vmin;
+        height: 30vmin;
+        margin-top:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vmin;
+    }
  }
- #quotetwo {
-     right: 10vw;
- }
- #twain {
-     right: 15vw;
-     bottom: 3vh;
-     font-size: 2vh;
- }
- .portfolio-circle {
-    width: 25vmin;
-    height: 25vmin;
-  }
- .behance-title-name {
-    font-size: 2vmin;
-    line-height: 2vmin;
-  }
- .behance-title-caption {
-    font-size: 2vmin;
-  }
-}
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  #quoteone {
-    left: 20.5vw;
-    font-size: 4em;
-  }
-  #quotetwo {
-    right: 22vw;
-    font-size: 4em;
-  }
-}
-
+@media (min-width:1280px)  {
+    #quotation {
+        font-size: 4.9vh;  
+    }
+    #quotepants {
+        margin-top: 2vh;
+        margin-left: 3%;
+        font-size: 5vh;
+    }
+    .arrow-scroll {
+        font-size: 8vh;
+        padding-bottom: 5vh;
+    }
+    .navbar-default {
+        padding: 25px 0;
+        background-color: transparent;
+        transition: padding .3s;
+        border: 0;
+        width: 100vw;
+    }
+    .navbar-name {
+        font-size: 1em;
+    }
+    .portfolio-circle {
+        width: 28vmin;
+        height: 28vmin;
+        margin-top:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vmin;
+    }
+ }
+    
 .navbar-name:hover,
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -5216,6 +5231,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
  padding: 23px 15px;
 }
 
+
+
 .form-title {
     font-family: 'Roboto Sans', sans-serif;
     font-weight: 100;
@@ -5305,6 +5322,10 @@ footer p {
     font-size: 80%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+}
+
+.blck-bkgrnd {
+    background-image:url(../imgs/outlets.png);
 }
 
 .breadcrumb {
