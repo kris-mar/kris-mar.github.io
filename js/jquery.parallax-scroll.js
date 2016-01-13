@@ -42,6 +42,7 @@ var ParallaxScroll = {
         var windowHeight = $(window).height();
         this._log("onScroll " + scroll);
         $("[data-parallax]").each($.proxy(function(index, el) {
+            if(window.innerWidth < 768) return;
             var $el = $(el);
             var properties = [];
             var applyProperties = false;
