@@ -5319,6 +5319,30 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     background-image:url(../imgs/linkedinonhover.png);
 }
 
+#lhovericon-reverse {
+  background-image: url(../imgs/linkedinonhover.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 7vh;
+  width: 8vh;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+  float:none;
+  margin:auto;
+  display:inline-block;
+}
+
+#lhovericon-reverse a {
+  color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#lhovericon-reverse:hover {
+  transition: background-image 0.5s ease;
+  background-image:url(../imgs/linkedin.png);
+}
+
 #bhovericon {
   background-image: url(../imgs/behance.png);
   background-size: cover;
@@ -5338,6 +5362,77 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 #bhovericon:hover { 
   transition: background-image 0.5s ease;
   background-image: url(../imgs/behanceonhover.png);
+}
+
+#bhovericon-reverse {
+  background-image: url(../imgs/behanceonhover.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 7vh;
+  width: 8vh;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+  float:none;
+  margin:auto;
+  display:inline-block;
+}
+
+#bhovericon-reverse a {
+  color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  display:inline-block;
+}
+
+#bhovericon-reverse:hover {
+  transition: background-image 0.5s ease;
+  background-image: url(../imgs/behance.png);
+}
+
+
+#thovericon {
+  background-image: url(../imgs/twitter.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 7vh;
+  width: 8vh;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+}
+
+#thovericon a {
+  color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#thovericon:hover {
+  transition: background-image 0.5s ease;
+  background-image: url(../imgs/twitteronhover.png);
+}
+
+#thovericon-reverse {
+  background-image: url(../imgs/twitteronhover.png);
+  background-size: cover;
+  background-repeat: none;
+  height: 7vh;
+  width: 8vh;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+  float:none;
+  margin:auto;
+  display:inline-block;
+}
+
+#thovericon-reverse a {
+  color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#thovericon-reverse:hover {
+  transition: background-image 0.5s ease;
+  background-image: url(../imgs/twitter.png);
 }
 
 .box {
@@ -7383,4 +7478,11 @@ button.close {
   }
 }
 
+.centerit {
+  float:none;
+  margin: 0 auto;
+}
+
+.centerit li {
+  display: inline-block;
 }
