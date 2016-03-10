@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718586cf-0345-4e91-9f1a-b792a1b6e42c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/skeleton.css" afterPath="$PROJECT_DIR$/css/skeleton.css" />
     </list>
     <ignored path="kris-mar.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +29,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32239157">
-                  <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+                <state vertical-scroll-proportion="0.52168816">
+                  <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,21 +45,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35416666">
+                <state vertical-scroll-proportion="-4.5873017">
                   <caret line="217" column="23" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="skeleton.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="skeleton.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/skeleton.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.3174605">
-                  <caret line="152" column="8" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.41666666">
+                  <caret line="134" column="57" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -76,8 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/skeleton.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/css/skeleton.css" />
       </list>
     </option>
   </component>
@@ -303,17 +304,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/skeleton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3174605">
-          <caret line="152" column="8" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35416666">
+        <state vertical-scroll-proportion="-4.5873017">
           <caret line="217" column="23" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="23" />
           <folding />
         </state>
@@ -321,14 +314,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32239157">
-          <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.52168816">
+          <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/skeleton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41666666">
+          <caret line="134" column="57" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
