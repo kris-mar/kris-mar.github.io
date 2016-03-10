@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 5em 4.875em 4.875em;
+    padding: 4em 4em 4em;
     height: 100%;
     overflow:hidden;
     background-color: #222222;
@@ -47,7 +47,7 @@
 .navigation {
     list-style: none;
     font-weight: 400;
-    font-size: 1.425em;
+    font-size: 2.1vh;
 }
 
 .navigation a:link{
@@ -69,7 +69,7 @@
     border:0;
     vertical-align: baseline;
     color: #222222;
-    padding: 4.0625em 0 0;
+    padding: 4em 0 0;
     margin-top:4.875em;
 }
 
