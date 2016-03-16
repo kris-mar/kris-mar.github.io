@@ -17,12 +17,11 @@ $(function() {
         // Serialize the form data.
         var formData = $(form).serialize();
 
-        // Submit the form using AJAX.
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-        }).done(function(response) {
+       $.ajax({
+        url: "//formspree.io/kris.m.hanlon@gmail.com", 
+        method: "POST",
+        data: formData
+        }).success(function(response) {
             // Make sure that the formMessages div has the 'success' class.
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
