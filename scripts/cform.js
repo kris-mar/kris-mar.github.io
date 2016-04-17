@@ -5,44 +5,44 @@ $(function() {
     // Get the messages div.
     var formMessages = $('#form-messages');
 
-    // TODO: The rest of the code will go here...
-
     // Set up an event listener for the contact form.
     $(form).submit(function(event) {
         // Stop the browser from submitting the form.
         event.preventDefault();
 
-        // TODO
-
         // Serialize the form data.
         var formData = $(form).serialize();
+        console.log(formData);
 
        $.ajax({
-        url: "//formspree.io/kris.m.hanlon@gmail.com", 
+        url: "https://formspree.io/kris.m.hanlon@gmail.com", 
         method: "POST",
         data: formData
-        }).success(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
+        }).done(function(response) {
+           $('#subjectInput').val('');
+           $('#emailInput').val('');
+           $('#Message').val('');
+           $(formMessages).addClass('load');
 
-            // Set the message text.
-            $(formMessages).text(response);
-
-            // Clear the form.
-            $('#name').val('');
-            $('#email').val('');
-            $('#message').val('');
+           setTimeout(function() {
+               $(formMessages).removeClass('load');
+           }, 3000);
         }).fail(function(data) {
-            // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
+
 
             // Set the message text.
             if (data.responseText !== '') {
                 $(formMessages).text(data.responseText);
             } else {
-                $(formMessages).text('Your email has been sent successfully.');
+
+                $('#subjectInput').val('');
+                $('#emailInput').val('');
+                $('#Message').val('');
+                $(formMessages).addClass('load');
+
+                setTimeout(function() {
+                    $(formMessages).removeClass('load');
+                }, 3000);
             }
         });
     });

@@ -114,18 +114,21 @@
                 <div class="row">
                     <div class="six columns">
                         <label for="emailInput">Your email</label>
-                        <input class="u-full-width" type="email" placeholder="dana.scully@fbi.com" id="emailInput">
+                        <input class="u-full-width" name="_replyto" type="email" placeholder="dana.scully@fbi.com" id="emailInput">
                     </div>
                     <div class="six columns">
                         <label for="subjectInput">Subject</label>
-                        <input class="u-full-width" type="text" placeholder="Freelance Alien Hunting" id="subjectInput">
+                        <input class="u-full-width" name="subject" type="text" placeholder="Freelance Alien Hunting" id="subjectInput">
                         </select>
                     </div>
                 </div>
                 <label for="Message">Message</label>
-                <textarea class="u-full-width" placeholder="Say something nice!" id="Message"></textarea>
+                <textarea class="u-full-width" name="body" placeholder="Say something nice!" id="Message"></textarea>
                 <input class="button-primary" type="submit" id="submit_button" value="Send">
+
+                <input type="text" name="_gotcha" style="display:none" />
             </form>
+            <div id="form-messages" class="formMessage">Your email has been sent successfully.</div>
         </div>
     </div>
 </div>

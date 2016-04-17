@@ -249,4 +249,22 @@ there.
     .content{
         padding-top:0;
     }
+
+}
+
+.formMessage {
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.formMessage.load {
+    opacity: 1;
 }
